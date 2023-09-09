@@ -354,6 +354,9 @@ nav .colourchange i{
     header{
         min-height: 60vh;
     }
+    nav{
+        height:3rem ;
+    }
     nav .logo img{
         width:7rem;
         cursor: pointer; 
