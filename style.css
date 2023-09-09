@@ -1,0 +1,871 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------ Scroll --------------- */
+html{
+    scroll-behavior: smooth;
+}
+/* ---------------- Scrollbar Hide --------------- */
+/* body::-webkit-scrollbar{
+    display: none;
+} */
+body{
+    background-color: #000;
+}
+/* ------------------ Header Background Image ------------------------*/
+header{
+   background: linear-gradient(rgba(1, 1, 24, 0.6),rgba(0, 0, 0, 0.5)), url(./assets/background2.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* -------------------------- Shining Effect ------------------- */
+nav::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg ,transparent ,rgba(255, 255, 255, 0.3), transparent);
+    transition: .4s;
+}
+nav:hover::after{
+    left: 100%;
+}
+
+/* --------------------------- Navigation Bar ----------------- */
+nav{
+    height: 5rem;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: .2rem 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 8px -4px rgba(95, 151, 184, 0.4);
+    transition: .5s ease-in-out;
+}
+/* -------------------- On Scroll Navbar Colour Changed --------------------- */
+nav.bgcolour{
+    transition: .5s ease-in-out;
+    background-color: #fff;
+    box-shadow: 0 8px 8px -4px rgba(255, 0, 217, 0.4);
+}
+.nav_menu ul li a.fontchange{
+    transition: .2s ease-in-out;
+    color: black;
+}
+.nav_menu ul li a.fontchange:hover{
+    color: #e91e63;
+}
+
+/* -------------------------------- Logo ------------------------- */
+nav .logo img{
+    width: 12rem;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+nav .logo img:hover{
+    filter: drop-shadow(0px 1px 10px rgba(255, 255, 255, 0.9));
+}
+/* ------------------------- Navigation Menu --------------------- */
+.nav_menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav_menu ul li{
+    list-style: none;
+}
+.nav_menu ul li a{
+    text-decoration: none;
+    margin: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    transition: .2s ease-in;
+}
+.nav_menu ul li a:hover{
+    color: #fffb00;
+}
+
+/* ----------------------- Login Button --------------------- */
+button{
+    padding: .6rem 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-color: #e91e63 ;
+    border-radius: 15px;
+    border:none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .1s ease-in;
+}
+button:hover{
+    background-color:#ffffff ;
+    color: #e91e63;
+}
+
+/* ------------------------- Burger menu ----------------- */
+nav .burger{
+    display: none;
+}
+nav .burger i{
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+nav .colourchange i{
+    color: #e91e63;
+}
+/* ----------------------------- Navigation Complete ---------------- */
+
+
+/* ------------------------ Hero Section Start ---------------------- */
+.head_text
+{
+   /* text-transform: uppercase; */
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #d60000 29%,
+    #ff1188 67%,
+    #ffffff 100%
+  );
+  /* background-size: auto auto; */
+  /* background-clip: border-box; */
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.head_text h1{
+    line-height: 6.5rem;
+    color:#fff;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+    /* text-shadow: 0px 7px 15px rgb(0, 0, 0); */
+}
+.head_text h1 span{
+    color:#fff;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    font-size: 7rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+    /* text-shadow: 0px 7px 15px rgb(0, 0, 0); */
+}
+
+.title p{
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+    animation: textclip 2s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #ffea00 29%,
+    #ffffff 67%,
+    #ffffff 100%
+  );
+  background-size: 200% auto;
+}
+/* ------------------ Hero Section End ---------------------- */
+
+/* ----------------- Wedding Package Section Start ------------------- */
+#Wedding_package .heading_text{
+    background-color: #131313;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 15px rgb(255, 0, 0);
+    box-shadow: 0px -8px 8px -4px rgba(184, 95, 178, 0.4);
+}
+#Wedding_package .package_gallery{
+    max-width:100%;
+    display: grid;
+    gap: .1rem;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    /* border: 1px solid #e91e63; */
+    padding:2% 1%;
+    box-shadow: 0px -8px 8px -4px rgba(184, 95, 178, 0.4);
+}
+#Wedding_package .package_gallery .Package_card img{
+    max-width: 75%;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+    
+}
+#Wedding_package .package_gallery .Package_card img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px 5px rgba(255, 0, 183, 0.7);
+    cursor: pointer;
+}
+#Wedding_package .package_gallery .Package_card{
+    /* border: 1px solid #e91e63; */
+    border-radius: 10px;
+    /* overflow: hidden; */
+    text-align: center;
+}
+#Wedding_package .package_gallery .Package_card p{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: .5rem;
+    text-shadow: 1px 0px 20px rgba(0, 0, 0, 0.3);
+    transition: .2s ease-in-out;
+    color: #fff;
+}
+#Wedding_package .package_gallery .Package_card p:hover{
+    color: #e6007b;
+}
+/* ----------------- Wedding Package Section End ------------------- */
+
+/* ----------------- Portfolio Video Section Start ------------------- */
+
+#Portfollio .heading_text,#photography .heading_text{
+    background-color: #121212;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: 0px -8px 8px -4px rgba(184, 95, 178, 0.4);
+    text-shadow: 0px 0px 15px rgb(255, 0, 0);
+    transition: .2s ease-in-out;
+}
+#Portfollio .Portfollio_video{
+    max-width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding:2% 15%;
+    box-shadow: 0px -8px 8px -4px rgba(184, 95, 178, 0.4);
+    /* border: 1px solid red; */
+}
+#Portfollio .Portfollio_video .video_1{
+    border-radius: 15px;
+    width: 100%;
+    height: 50vh;
+    margin-top: 1rem;
+    transition: .2s ease-in-out;
+    /* border: 1px solid chartreuse; */
+    /* border: 1px solid rgb(0, 255, 242); */
+}
+#Portfollio .Portfollio_video .video_1:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px rgba(255, 130, 180, 0.7);
+}
+#Portfollio .Portfollio_video .video_1> iframe{
+    border-radius: 15px;
+    width: 100%;
+    height:50vh;
+}
+
+/* ----------------- Portfolio Video Section Start ------------------- */
+
+/* ----------------- Photography Section Start ------------------- */
+#photography .photo_gallery{
+    max-width: 100%;
+    display: grid;
+    gap: 1rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding:2% 15%;
+    box-shadow: 0px -8px 8px -4px rgba(184, 95, 178, 0.4);
+    /* border: 1px solid red; */
+}
+
+#photography .photo_gallery .photo_card img{
+    max-width:100%;
+    height: 25rem;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+#photography .photo_gallery .photo_card img:hover{
+    transform:translateY(-5px);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px rgba(130, 255, 253, 0.7);
+}
+
+/*----------------------- Media Query --------------------*/
+
+/* ------------------ Up To 560px --------------- */
+@media screen and (max-width: 35rem){
+    header{
+        min-height: 50vh;
+    }
+    nav .logo img{
+        width:7rem;
+        cursor: pointer; 
+    }
+    nav .burger{
+        display: inline-block;
+    }
+    button{
+        display: none;
+    }
+    .nav_menu ul{
+        position: absolute;
+        top: 0;
+        left:100%;
+        right:0;
+        width: 100%;
+        height:100vh;
+        flex-direction: column;
+        z-index: -100;
+        background-color: rgb(5, 25, 57);
+        transition: all .5s;
+    }
+    /* .nav_menu ul li a{
+        font-size: 1.4rem;
+        color: #ffffff;
+    } */
+    .nav_menu ul li a.fontchange{
+        color: #fff;
+    }
+    .nav_menu ul li{
+        margin: 1.1rem 0;
+    }
+    .nav_menu ul.show{
+        left: 0;
+    }
+    .head_text h1{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .head_text h1 span{
+        font-size: 2.5rem;
+    }
+    .title p{
+        font-size: .8rem;
+    }
+    #Wedding_package .heading_text{
+        font-size: .8rem;
+        height:2rem;
+    }
+    #Wedding_package .package_gallery .Package_card{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .4rem;
+     }
+     #Wedding_package .package_gallery .Package_card p{
+         font-size: .7rem;
+     }
+     #Wedding_package .package_gallery .Package_card img{
+         max-width: 80%;
+     }
+     #Portfollio .heading_text{
+        font-size: .8rem;
+        height: 2rem;
+     }
+     #Portfollio .Portfollio_video .video_1{
+        border-radius: 15px;
+        width: 100%;
+        height:100%;
+        margin-top: 1rem;
+        transition: .2s ease-in-out;
+        border: 1px solid rgba(255, 0, 195, 0.687);
+    }
+     #Portfollio .Portfollio_video .video_1> iframe{
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+    }
+    #Portfollio .Portfollio_video{
+        padding: 1% 8%;
+    }
+    #photography .heading_text{
+        font-size: .8rem;
+        height: 2rem;
+    }
+    #photography .photo_gallery{
+        padding: 2% 6%;
+    }
+    #photography .photo_gallery .photo_card img{
+        max-width:100%;
+        height: 10rem;
+        border-radius: 10px;
+        transition: .2s ease-in-out;
+    }
+}
+
+
+/* ---------------- Small Device (560px To 780px) ------------------- */
+@media screen and (min-width:35rem) and (max-width: 48.8rem){
+    header{
+        min-height: 70vh;
+    }
+    nav .logo img{
+        width:10rem;
+        cursor: pointer;
+    }
+    nav .burger{
+        display: inline-block;
+    }
+    button{
+        display: none;
+    }
+    .nav_menu ul{
+        position: absolute;
+        top: 0;
+        left:100%;
+        right:0;
+        width: 100%;
+        height:100vh;
+        flex-direction: column;
+        z-index: -100;
+        background-color: rgb(5, 25, 57);
+        transition: all .5s;
+    }
+    /* .nav_menu ul li a{
+        font-size: 1.4rem;
+        color: #ffffff;
+    } */
+    .nav_menu ul li a.fontchange{
+        color: #fff;
+    }
+    .nav_menu ul li{
+        margin: 1.1rem 0;
+    }
+    .nav_menu ul.show{
+        left: 0;
+    }
+    .head_text h1{
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+    .head_text h1 span{
+        font-size: 3.8rem;
+    }
+    .title p{
+        font-size: 1rem;
+    }
+    #Wedding_package .heading_text{
+        font-size: .8rem;
+        height:2rem;
+    }
+    #Wedding_package .package_gallery .Package_card p{
+        font-size: .8rem;
+    }
+    #Wedding_package .package_gallery .Package_card img{
+        max-width: 80%;
+    }
+    #Portfollio .heading_text{
+        font-size: .8rem;
+        height: 2rem;
+     }
+     #Portfollio .Portfollio_video .video_1{
+        border-radius: 15px;
+        width: 100%;
+        height:100%;
+    }
+     #Portfollio .Portfollio_video .video_1> iframe{
+        border-radius: 15px;
+        width: 100%;
+        height:100%;
+    }
+    #Portfollio .Portfollio_video{
+        padding: 1% 8%;
+    }
+    #photography .heading_text{
+        font-size: .8rem;
+        height: 2rem;
+    }
+    #photography .photo_gallery{
+        padding: 2% 8%;
+    }
+    #photography .photo_gallery .photo_card img{
+        max-width:100%;
+        height: 12rem;
+        border-radius: 10px;
+        transition: .2s ease-in-out;
+    }
+}
+
+
+/* ----------- 780px To 816 px ------------ */
+@media screen and (min-width: 48.8rem) and (max-width: 51rem){
+    .nav_menu ul li a{
+        font-size: 1rem;
+        color: #ffffff;
+    }
+    nav .logo img{
+        width:8rem;
+        cursor: pointer;
+    }
+    button{
+        font-size: 1rem;
+        padding: .4rem 1rem;
+    }
+    .head_text h1{
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+    .head_text h1 span{
+        font-size: 3.8rem;
+    }
+    .title p{
+        font-size: 1rem;
+    }
+    #Wedding_package .heading_text{
+        font-size: .9rem;
+        height:3rem;
+    }
+    #Wedding_package .package_gallery .Package_card p{
+        font-size: .9rem;
+    }
+    #Portfollio .heading_text{
+        font-size: .9rem;
+        height: 3rem;
+     }
+    #Portfollio .Portfollio_video .video_1{
+        border-radius: 15px;
+        width: 100%;
+        height:100%;
+    }
+     #Portfollio .Portfollio_video .video_1> iframe{
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+    }
+    #Portfollio .Portfollio_video{
+        padding: 1% 10%;
+    }
+    #photography .heading_text{
+        font-size: .9rem;
+        height: 3rem;
+    }
+    #photography .photo_gallery{
+        padding: 2% 10%;
+    }
+    #photography .photo_gallery .photo_card img{
+        max-width:100%;
+        height: 15rem;
+        border-radius: 10px;
+        transition: .2s ease-in-out;
+    }
+}
+
+
+/* --------------- 816px To 1000px -------------- */
+@media screen and (min-width: 51rem) and (max-width: 62.5rem){
+    .nav_menu ul li a{
+        font-size: 1rem;
+        color: #ffffff;
+    }
+    nav .logo img{
+        width:10rem;
+        cursor: pointer;
+    }
+    button{
+        padding: .5rem 1.2rem;
+        font-size: 1rem;
+    }
+    .head_text h1{
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+    .head_text h1 span{
+        font-size: 3.8rem;
+    }
+    .title p{
+        font-size: 1rem;
+    }
+    #Portfollio .heading_text{
+        font-size: 1rem;
+        height: 3rem;
+     }
+     #Portfollio .Portfollio_video .video_1{
+        border-radius: 15px;
+        width: 100%;
+        height:100%;
+    }
+     #Portfollio .Portfollio_video .video_1> iframe{
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+    }
+    #Portfollio .Portfollio_video{
+        padding: 1% 12%;
+    }
+    #photography .heading_text{
+        font-size: 1rem;
+        height: 3rem;
+    }
+    #photography .photo_gallery{
+        padding: 2% 12%;
+    }
+    #photography .photo_gallery .photo_card img{
+        max-width:100%;
+        height: 16rem;
+        border-radius: 10px;
+        transition: .2s ease-in-out;
+    }
+
+}
+/* ------------------ 1000px To 1400px ---------------- */
+@media screen and (min-width:62.5rem) and (max-width:87.5rem){
+    #Portfollio .Portfollio_video .video_1{
+        border-radius: 15px;
+        width: 100%;
+        height:30vh;
+    }
+     #Portfollio .Portfollio_video .video_1> iframe{
+        border-radius: 15px;
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+/* ------------------ 1400px To 1500px ---------------- */
+@media screen and (min-width:87.5rem) and (max-width:93.8rem){
+    nav{
+        height: 5rem;
+    }
+    .nav_menu ul li a{
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+    nav .logo img{
+        width:10rem;
+        cursor: pointer;
+    }
+    button{
+        font-size: 1.4rem;
+        padding: .6rem 1.4rem;
+    }
+    #Portfollio .Portfollio_video .video_1{
+        border-radius: 15px;
+        width: 100%;
+        height:30vh;
+    }
+     #Portfollio .Portfollio_video .video_1> iframe{
+        border-radius: 15px;
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+/* ------------------ 1500px To 1600px ------------ */
+@media screen and (min-width:93.8rem) and (max-width:100rem){
+    nav{
+        height: 5rem;
+    }
+    .nav_menu ul li a{
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+    nav .logo img{
+        width:10rem;
+        cursor: pointer;
+    }
+    button{
+        font-size: 1.4rem;
+        padding: .6rem 1.4rem;
+    }
+    #Wedding_package .package_gallery .Package_card{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .6rem;
+     }
+     #Wedding_package .heading_text{
+        font-size: 1.5rem;
+        height:5rem;
+    }
+     #Wedding_package .package_gallery .Package_card p{
+         font-size: 1.8rem;
+     }
+     #Wedding_package .package_gallery .Package_card img{
+         max-width: 80%;
+     }
+     #Portfollio .heading_text{
+        font-size: 1.5rem;
+        height: 5rem;
+     }
+     #Portfollio .Portfollio_video .video_1{
+        border-radius: 15px;
+        width: 100%;
+        height:30vh;
+    }
+     #Portfollio .Portfollio_video .video_1> iframe{
+        border-radius: 15px;
+        width: 100%;
+        height: 30vh;
+    }
+    #Portfollio .Portfollio_video{
+        padding: 1% 15%;
+    }
+}
+
+/* ------------------ 1600px To 1920px ------------ */
+@media screen and (min-width:100rem) and (max-width:120rem){
+    nav{
+        height: 6rem;
+    }
+    .nav_menu ul li a{
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    nav .logo img{
+        width:13rem;
+        cursor: pointer;
+    }
+    button{
+        font-size: 1.8rem;
+        padding: .6rem 1.5rem;
+    }
+    .head_text h1{
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    .head_text h1 span{
+        font-size: 8rem;
+    }
+    .title p{
+        font-size: 2rem;
+    }
+    #Wedding_package .package_gallery .Package_card{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .6rem;
+     }
+     #Wedding_package .heading_text{
+        font-size: 1.5rem;
+        height:5rem;
+    }
+     #Wedding_package .package_gallery .Package_card p{
+         font-size: 1.8rem;
+     }
+     #Wedding_package .package_gallery .Package_card img{
+         max-width: 100%;
+     }
+     #Portfollio .heading_text{
+        font-size: 1.5rem;
+        height: 5rem;
+     }
+     #Portfollio .Portfollio_video .video_1{
+        border-radius: 15px;
+        width: 100%;
+        height:35vh;
+    }
+     #Portfollio .Portfollio_video .video_1> iframe{
+        border-radius: 15px;
+        width: 100%;
+        height: 35vh;
+    }
+}
+/* --------------- min 1920px -------------- */
+@media screen and (min-width: 120rem){
+    nav{
+        height: 8rem;
+    }
+    .nav_menu ul li a{
+        font-size: 2.5rem;
+        color: #ffffff;
+    }
+    nav .logo img{
+        width:15rem;
+        cursor: pointer;
+    }
+    button{
+        font-size: 2rem;
+        padding: .6rem 1.5rem;
+    }
+    .head_text h1{
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+    .head_text h1 span{
+        font-size: 10rem;
+    }
+    .title p{
+        font-size: 2.5rem;
+    }
+    #Wedding_package .heading_text{
+        font-size: 2.5rem;
+        height:6.5rem;
+    }
+    #Wedding_package .package_gallery .Package_card{
+       /* border: 1px solid red; */
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: .6rem;
+    }
+    #Wedding_package .package_gallery .Package_card p{
+        font-size: 2.2rem;
+    }
+    #Wedding_package .package_gallery .Package_card img{
+        max-width: 100%;
+    }
+}
