@@ -352,7 +352,7 @@ nav .colourchange i{
 /* ------------------ Up To 560px --------------- */
 @media screen and (max-width: 35rem){
     header{
-        min-height: 50vh;
+        min-height: 60vh;
     }
     nav .logo img{
         width:7rem;
