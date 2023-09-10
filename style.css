@@ -102,7 +102,7 @@ nav .logo img{
     transition: .2s ease-in;
 }
 .nav_menu ul li a:hover{
-    color: #fffb00;
+    color: #e91e63;
 }
 
 /* ----------------------- Login Button --------------------- */
@@ -197,7 +197,7 @@ nav .colourchange i{
     background-image: linear-gradient(
     -225deg,
     #ffffff 0%,
-    #ffea00 29%,
+    #e91e63 29%,
     #ffffff 67%,
     #ffffff 100%
   );
@@ -346,6 +346,9 @@ nav .colourchange i{
 /* ----------------- Footer Section Start ---------------- */
 
 /* ---------------- Contact Details ------------------ */
+#contact .heading_text{
+    border-bottom:1px solid rgba(145, 53, 153, 0.424);
+}
 #contact .contact_div{
     display: flex;
     flex-direction: row;
@@ -418,6 +421,34 @@ nav .colourchange i{
 #contact .contact_div .contact_details p:nth-child(2){
     text-align: center;
     margin: .5rem 0 1rem 0;
+}
+#contact .contact_div .contact_details .social_icons{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+#contact .contact_div .contact_details .social_icons a i{
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+}
+#contact .contact_div .contact_details .social_icons a{
+    cursor: default;
+}
+#contact .contact_div .contact_details .social_icons a i:hover{
+    box-shadow:  0px 0px 15px 1px rgb(130, 255, 253);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+#contact .social_section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #d0d0d0;
+    width:100vw;
+    height: 30vh;
 }
 /*----------------------- Media Query --------------------*/
 
