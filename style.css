@@ -353,6 +353,7 @@ nav .colourchange i{
     }
     nav{
         height:3rem;
+        backdrop-filter: blur(20px);
     }
     nav .logo img{
         width:7rem;
