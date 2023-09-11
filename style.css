@@ -1209,10 +1209,10 @@ nav .colourchange i{
 /* --------------- min 1920px -------------- */
 @media screen and (min-width: 120rem){
     nav{
-        height: 8rem;
+        height: 6.5rem;
     }
     .nav_menu ul li a{
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: #ffffff;
     }
     nav .logo img{
@@ -1220,7 +1220,7 @@ nav .colourchange i{
         cursor: pointer;
     }
     button{
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding: .6rem 1.5rem;
     }
     .head_text h1{
@@ -1279,5 +1279,8 @@ nav .colourchange i{
     #contact .social_section .qr_code .qr_img{
         width: 12rem;
         height: 12rem;
+    }
+    #contact .copyright p span{
+        color: #ffaed9;
     }
 }
