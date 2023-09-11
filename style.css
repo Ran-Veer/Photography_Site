@@ -1257,13 +1257,13 @@ nav .colourchange i{
     }
     #contact .contact_div .contact_details .social_icons a i{
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin: 1rem;
         border-radius: 50%;
         transition: .2s ease-in-out;
     }
     #contact .social_section .location p{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     #contact .social_section .location iframe{
         width:30rem;
@@ -1274,7 +1274,7 @@ nav .colourchange i{
         height: 14rem;
     }
     #contact .social_section .qr_code p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     #contact .social_section .qr_code .qr_img{
         width: 12rem;
@@ -1282,5 +1282,9 @@ nav .colourchange i{
     }
     #contact .copyright p span{
         color: #ffaed9;
+    }
+    #contact .contact_div .contact_details p{
+        font-size: 1.3rem;
+        font-weight: 300;
     }
 }
