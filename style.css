@@ -1041,7 +1041,7 @@ nav .colourchange i{
 
     #contact .contact_div .contact_details .social_icons a i{
         color: #fff;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin: 1rem;
         border-radius: 50%;
         transition: .2s ease-in-out;
@@ -1254,5 +1254,30 @@ nav .colourchange i{
     #contact .heading_text{
         font-size: 1.5rem;
         height: 5rem;
+    }
+    #contact .contact_div .contact_details .social_icons a i{
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 1rem;
+        border-radius: 50%;
+        transition: .2s ease-in-out;
+    }
+    #contact .social_section .location p{
+        font-size: 1.2rem;
+    }
+    #contact .social_section .location iframe{
+        width:30rem;
+        height: 12rem;
+    }
+    #contact .social_section .qr_code{
+        width: 14rem;
+        height: 14rem;
+    }
+    #contact .social_section .qr_code p{
+        font-size: 1rem;
+    }
+    #contact .social_section .qr_code .qr_img{
+        width: 12rem;
+        height: 12rem;
     }
 }
