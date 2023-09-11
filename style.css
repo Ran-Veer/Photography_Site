@@ -338,7 +338,7 @@ nav .colourchange i{
     transition: .2s ease-in-out;
 }
 #photography .photo_gallery .photo_card img:hover{
-    transform:translateY(-5px);
+    transform:scale(1.2);
     cursor: pointer;
     box-shadow: 0px 0px 10px 5px rgba(130, 255, 253, 0.7);
 }
@@ -376,16 +376,16 @@ nav .colourchange i{
 @keyframes rotate{
     0%{
         /* transform: rotate(360deg); */
-        box-shadow:  0px 0px 10px 3px rgb(130, 255, 253);
+        box-shadow:  0px 0px 15px -2px rgb(130, 255, 253);
     }
     50%{
-        box-shadow:  0px 0px 10px 3px rgb(229, 255, 0);
+        box-shadow:  0px 0px 15px -2px rgb(229, 255, 0);
     }
     75%{
-        box-shadow: 0px 0px 10px 3px rgb(255, 0, 251);
+        box-shadow: 0px 0px 15px -2px rgb(255, 0, 251);
     }
     100%{
-        box-shadow:  0px 0px 10px 3px rgb(130, 255, 253);
+        box-shadow:  0px 0px 15px -2px rgb(130, 255, 253);
     }
 }
 #contact .contact_div .contact_details{
@@ -498,6 +498,46 @@ nav .colourchange i{
 }
 #contact .social_section .qr_code .qr_img:hover{
     box-shadow:  0px 0px 15px -1px rgb(130, 255, 253);
+}
+#contact .social_section .profile p{
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:300;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: default;
+    /* border: 1px solid yellow; */
+}
+@keyframes rotate1{
+    0%{
+        /* transform: rotate(360deg); */
+        box-shadow:  0px 0px 17px -3px rgb(130, 255, 253);
+    }
+    50%{
+        box-shadow:  0px 0px 17px -4px rgb(229, 255, 0);
+    }
+    75%{
+        box-shadow: 0px 0px 17px -4px rgb(255, 0, 251);
+    }
+    100%{
+        box-shadow:  0px 0px 17px -3px rgb(130, 255, 253);
+    }
+}
+#contact .social_section .profile .profile_img{
+    /* border:1px solid yellowgreen; */
+    width: 10rem;
+    height: 10rem;
+    background: url(./assets/pro-3.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius:50%;
+    animation: rotate1 4s linear infinite;
+    transition: .2s ease-in-out;
+    transform: scale(.9);
+}
+#contact .social_section .profile .profile_img:hover{
+    transform: scale(1.1);
 }
 #contact .copyright{
     color: #fff;
@@ -680,6 +720,13 @@ nav .colourchange i{
         font-size: .7rem;
         font-weight: 300;
     }
+    #contact .social_section .profile p{
+        font-size: .9rem;
+    }
+    #contact .social_section .profile .profile_img{
+        width: 7rem;
+        height: 7rem;
+    }
 }
 
 
@@ -826,6 +873,13 @@ nav .colourchange i{
         width:14rem;
         height: 7rem;
     }
+    #contact .social_section .profile p{
+        font-size: .9rem;
+    }
+    #contact .social_section .profile .profile_img{
+        width: 7rem;
+        height: 7rem;
+    }
 }
 
 
@@ -923,6 +977,13 @@ nav .colourchange i{
     }
     #contact .social_section .location iframe{
         width:16rem;
+        height: 8rem;
+    }
+    #contact .social_section .profile p{
+        font-size: 1rem;
+    }
+    #contact .social_section .profile .profile_img{
+        width: 8rem;
         height: 8rem;
     }
 }
@@ -1254,6 +1315,11 @@ nav .colourchange i{
     #Wedding_package .package_gallery .Package_card img{
         max-width: 100%;
     }
+    #photography .photo_gallery .photo_card img:hover{
+        transform:scale(1.4);
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 5px rgba(130, 255, 253, 0.7);
+    }
     #contact .heading_text{
         font-size: 1.5rem;
         height: 5rem;
@@ -1289,5 +1355,15 @@ nav .colourchange i{
     #contact .contact_div .contact_details p{
         font-size: 1.3rem;
         font-weight: 300;
+    }
+    #contact .contact_div{
+        gap: 15rem;
+    }
+    #contact .social_section .profile p{
+        font-size: 1.2rem;
+    }
+    #contact .social_section .profile .profile_img{
+        width: 12rem;
+        height: 12rem;
     }
 }
