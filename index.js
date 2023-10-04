@@ -26,3 +26,16 @@ function change(){
         burger.classList.remove('colourchange')
     }
 }
+
+const dot = document.querySelector('.circle')
+document.addEventListener("mousemove",(e)=>{
+    let x = e.pageX;
+    let y =e.pageY;
+    
+    dot.style.top = y + "px";
+    dot.style.left = x + "px";
+    dot.style.display = "block";
+})
+document.addEventListener("mouseout",()=>{
+    dot.style.display = "none";
+})

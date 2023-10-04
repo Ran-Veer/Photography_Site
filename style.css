@@ -169,6 +169,41 @@ nav .colourchange i{
 }
 /* ------------------ Hero Section End ---------------------- */
 
+/* --------------- Moving Circle Along Cursor Start ------------------- */
+.circle{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color:#e60041;
+    border-radius: 50%;
+    border: none;
+    opacity:.3;
+    pointer-events: none;
+    box-shadow: 0 0 10px 2px #00e1ff;
+    transform: translate(-50%,-50%);
+    animation: colors 3s infinite;
+}
+
+@keyframes colors {
+    0%{
+        box-shadow: 0 0 10px 2px #00e1ff;
+    }
+    25%{
+        box-shadow: 0 0 10px 3px #6aff00;
+    }
+    50%{
+        box-shadow: 0 0 10px 2px #ff00fb;
+    }
+    75%{
+        box-shadow: 0 0 10px 3px #1100ff;
+    }
+    100%{
+        box-shadow: 0 0 10px 2px #00d5ff;
+    }
+}
+
+/* -------------------- Moving Circle Along Cursor End ----------------------- */
+
 /* ----------------- Title Text Section Start ------------------- */
 #Wedding_package .heading_text{
     background-color: #131313;
