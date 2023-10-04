@@ -26,7 +26,7 @@ function change(){
         burger.classList.remove('colourchange')
     }
 }
-
+// ------------------ Moving Circle ------------------------
 const dot = document.querySelector('.circle')
 document.addEventListener("mousemove",(e)=>{
     let x = e.pageX;
@@ -39,3 +39,4 @@ document.addEventListener("mousemove",(e)=>{
 document.addEventListener("mouseout",()=>{
     dot.style.display = "none";
 })
+// ----------------- Moving Circle End ---------------

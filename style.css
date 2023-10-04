@@ -182,6 +182,7 @@ nav .colourchange i{
     box-shadow: 0 0 10px 2px #00e1ff;
     transform: translate(-50%,-50%);
     animation: colors 3s infinite;
+    z-index: 99999;
 }
 
 @keyframes colors {
@@ -201,7 +202,6 @@ nav .colourchange i{
         box-shadow: 0 0 10px 2px #00d5ff;
     }
 }
-
 /* -------------------- Moving Circle Along Cursor End ----------------------- */
 
 /* ----------------- Title Text Section Start ------------------- */
